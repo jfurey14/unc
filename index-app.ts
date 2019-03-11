@@ -1,2 +1,5 @@
-let a = "Hello Dickhead";
-print(a);
+export let main = async () => {
+  let a = "Hello Dickhead";
+  print(a);
+};
+main();
