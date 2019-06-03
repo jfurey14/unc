@@ -24,7 +24,10 @@ img {
       body {
 	      
 	/*   background-color: #B4F0FE;  */
-	      background-image: linear-gradient(to right, white 10%, #B4F0FE 80%, white 10%);
+	      background-color: #B4F0FE;
+	      background-position: 25% 25%;
+		      
+
 	      
      
       
