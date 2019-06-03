@@ -22,9 +22,11 @@ img {
         text-align: center;
       }
       body {
-        background-color: #B4F0FE;
-        background-size: 50%;
-	      background-position: center;
+	      
+	/*   background-color: #B4F0FE;  */
+	      background-image: linear-gradient(90deg, white 25%, #B4F0FE 50%, white 25%);
+	      
+     
       
                 
       }
