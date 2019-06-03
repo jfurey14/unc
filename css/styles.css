@@ -24,9 +24,7 @@ img {
       body {
 	      
 	/*   background-color: #B4F0FE;  */
-	      background-color: #B4F0FE;
-	      background-size: 25% 100%;
-		      
+	      background: linear-gradient(90deg, white 15%, #B4F0FE 15%, white 85%);
 
 	      
      
