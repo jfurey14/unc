@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<html lang = "en">
 
-<style>  
+<style>
+
 .slideshow-container {
   max-width: 500px;
   position: relative;
@@ -73,12 +71,12 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -89,7 +87,13 @@
 </style>
 
   <head>
+    <link href="./css/custom.css" rel="stylesheet" type="text/css" media= "all">
+    <link href="./css/nav.css" rel="stylesheet" type="text/css">
+    <link href="./css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./css/skeleton.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ΣAE NC Xi Chapter</title>
+
     <style>
       img {
           display: block;
@@ -102,37 +106,37 @@
       }
       th {
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
-      }  
+      }
       table {
         margin: auto;
-        width: 40%;
-      }
-      h1 {
-        font-family: 'Vollkorn', serif;
-        font-weight: 550;
-        font-size: 300%;
-        text-align: center;
-      }
-      body {
-        background-color: #B4F0FE;
       }
     </style>
   </head>
   <body>
-    <table>
+    <img src="./images/logo.jpg" width="100%" alt="logo" class="align-center">
+    <div class="row nav">
+     <div class="twelve columns">
+      <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="contact.html">Contact Us</a></li>
+       <li><a href="donate.html">Donate</a></li>
+      </ul>
+     </div><!-- this div closes the row -->
+    </div><!-- this div closes the twelve columns nav -->
+    <!--<table style="width:40%">
       <tr>
-        <th><a href="about">About</a>
-        <th><a href="members">Chapter Members</a>  
-        <th><a href="contact">Contact Us</a>  
+        <th><a href="about.html">About</a>
+        <th><a href="members.html">Chapter Members</a>
+        <th><a href="contact.html">Contact Us</a>
       </tr>
-    </table>
-    <h1>Sigma Alpha Epsilon NC Xi Chapter</h1>
+    </table>-->
+    <h1 style="font-size:300%;text-align:center">NC Xi Chapter<br>University of North Carolina at Chapel Hill</h1>
     <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="https://upload.wikimedia.org/wikipedia/en/5/57/Saecoat.png" height="300" width="250">
+  <img src="./images/insignia.jpg" height="300" width="250">
 </div>
 
 <div class="mySlides fade">
@@ -144,7 +148,7 @@
   <div class="numbertext">3 / 3</div>
   <img src="https://i.ibb.co/NTyyBdG/IMG-1932.png" height="300" width:60%>
 </div>
-      
+
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -152,9 +156,9 @@
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
 <script>
@@ -173,21 +177,23 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 </script>
     <h1 style="font-size:200%;text-align:center;">Welcome to Our New Website!</h1>
-    <p style="font-size:150%;text-align:center;">Click any of the above links to learn more about our brotherhood.</p>
+    <p style="font-size:150%;text-align:center;">Click any of the above links to learn more about our brotherhood.
+      <br>Alumni: mark 11/2 on your calendar for the alumni tailgate against Virginia!</p>
+        <p><a target="_blank" title="Like us on Facebook" href="https://www.facebook.com/pages/Sigma-Alpha-Epsilon/136720143038676"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/badgefacebook.png" border=0></a></p>
     <p style="font-size:100%;text-align:center;"><i>Page last updated Spring 2019</i></p>
   </body>
-</html>
 
+</html>
